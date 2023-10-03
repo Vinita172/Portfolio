@@ -1,0 +1,607 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+.header{
+    /* border: 1px solid white; */
+    background-color:#0F0E0E;
+    height: 70px;
+    position: fixed;
+    top:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 22px;
+}
+.header nav ul{
+    display: none;
+}
+#login{
+    margin: 5px;
+    padding: 10px 15px;
+}
+#login:hover,.header nav button:hover,.secure div button:hover{
+    border: 1px solid #F7B22C;
+    background-color: #F7B22C;
+    border-radius:5px;
+}
+.header .fa-bars{
+    color: #EE6A3E;
+    font-size: 30px;
+}
+.herosection{
+    background: url(../images/banner-bg-3.jpg) no-repeat center center;
+    background-size: cover;
+    /* border:1px solid; */
+    margin-top: 65px;
+    padding:30px 15px;
+    color: #FFFFFF;
+    /* text-align: justify; */
+}
+.herosection .heroinner,.technology .technologyinner,.apis,.apis .apisinner,.payments,.payments .paymentsinner,.secure,.secureinner,.kfeaturesinner,.numbers,.dapp,.wprocessinner,.country,.bloginner,.contactus{
+   /* border: 1px solid; */
+   display: flex;
+   flex-wrap: wrap;
+   text-align: justify;
+}
+.heroinner div,.technologyinner div,.apis div,.apisinner div,.payments div,.paymentsinner div,.secure div,.secureinner ul,.kfeaturesinner div,.numbers div,.dapp div,.wprocessinner div,.country div,.bloginner .bloging,.contactus div{
+    /* border: 1px solid; */
+    width:100%;
+    margin: 10px 0px;
+}
+
+.heroinner .herocontent p,.technology p,.apis p,.payments p,.secure  p,.kfeatures p,.numbers p,.dapp p,.wprocess p,.testimonial p,.info p,.countries p,.blogs p,.contactus p,.footer p{
+  margin: 10px 0px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.herocontent #gstarted,.herocontent #transfer,.secure div button,.dapp div #gplay,.dapp div #apple,.header nav button{
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #EE6A3E;
+    background-color: #EE6A3E;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.herocontent #gstarted:hover,.herocontent #transfer:hover,.dapp div #gplay:hover,.dapp div #apple:hover{
+    background-color: #000000;
+    border:  1px solid #000000;
+}
+.herocontent #transfer,.dapp div #apple{
+    background-color: #F7B22C;
+    border: 1px solid #F7B22C;
+}
+.herocontent .logos{
+    width: 100%;
+}
+.herosection .logos img{
+    display: inline-block;
+    width:40%;
+    margin: 10px;
+}
+.image{
+    width:100%;
+}
+.technology,.apis,.payments,.secure,.kfeatures,.numbers,.dapp,.wprocess,.testimonial,.info,.countries,.blogs,.contactus
+{
+    /* border: 1px solid; */
+    padding:30px 15px;
+    text-align: center;
+}
+
+.technology p small,.apis p small,.payments p small,.secure p small,.secure .fa-check-circle,.kfeatures p small,.dapp p small,.wprocess p small,.testimonial p small,.countries p small,.blogs p small{
+    color: #EE6A3E; 
+}
+.technologyinner div,.apisinner div,.kfeaturesinner div,.wprocessinner div,.country div,.bloginner div,.contactus div{
+    margin: 10px 5px;
+    text-align: left;
+}
+.technology div{
+    text-align: center;
+}
+.technologyinner div a,.kfeaturesinner div a,.info p a,.country div a,.countries p a,.blog a{
+    color: #EE6A3E;
+    text-decoration: none;
+}
+.technologyinner div .iconimg{
+    background: url(../images/why-bitr-icon-bg.png) no-repeat;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    /* margin: 10px 0px; */
+    margin: 20px auto;
+    padding: 15px;
+    border: none;
+}
+.apis,.secure{
+    text-align: left;
+    background-color: #FFF9F8;
+}
+.apis .apisinner,.payments .paymentsinner,.secure .secureinner {
+    width:100%;
+}
+.apisinner img,.paymentsinner img{
+    margin: 10px 0px;
+}
+.secureinner ul{
+    margin: 0px;
+    padding: 0px;
+}
+.secure ul li{
+   list-style: none;
+   margin:10px 0px 0px 0px;
+   font-size: 18px;
+}
+.secureinner ul li i{
+    padding: 0px 10px;
+}
+.payments,.dapp{
+    text-align: left;
+    background-color: #FFFFFF;
+}
+.kfeatures{
+    background-color: #FBFBFB;
+}
+
+.numbers{
+    background-color:#3C312B;
+    color: #FFFFFF;
+}
+.numbers div{
+    text-align: center;
+    margin: 20px 5px;
+    position: relative;
+}
+.numbers div h3{
+    font-size: 35px;
+    padding: 0px 0px 0px 20px;
+}
+.numbers h3::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 33%;
+    width: 3px;
+    height: 20%;
+    background-color: #EE6A3E;
+}
+.dapp div #gplay,.dapp div #apple{
+    /* word-wrap:break-word; */
+    display: inline-block;
+    /* width: 130px; */
+    padding: 5px 10px;
+}
+.fa-google-play,.fa-apple{
+    font-size:16px;
+    padding: 10px;
+}
+.wprocess{
+    background-color: #FFF9F8;
+}
+.testimonial .testimonialcontent{
+    margin:50px 20px;
+    /* text-align: left; */
+}
+#iconquote{
+    margin: 10px;
+    text-align: center;
+}
+.fa-star,.fa-square{
+    color: #F7B22C;
+    margin: 10px 0px;
+}
+.testimonial span .fa-square{
+    color: #EE6A3E;
+}
+.stars li{
+    list-style: none;
+    display: inline;
+}
+.info{
+    background-color: #3C312B;
+    color: #FFFFFF;
+    position: relative;
+}
+.infoimg1{
+    position: absolute;
+    top:40px;
+    right: 20px;
+}
+.info p span{
+    color: #F7B22C;
+}
+.infoimg2{
+    position: absolute;
+    bottom:40px;
+    left: 20px;
+}
+.country div{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.country div img{
+    float: left;
+    margin:0px 10px 0px 0px;
+}
+.country p{
+    clear: left;
+    margin: 20px 0px;
+}
+.blogs{
+    background-color: #FBFBFB;
+}
+.bloginner .bloging{
+    position: relative;
+    background-color: #ffffff;
+    margin: 30px 5px;
+}
+.bloging .blog{
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom:-75px;
+    right: 0px;
+   width: 95%;
+   margin: 40px 0px;
+   /* padding:0px 5px; */
+   /* text-align: justify; */
+}
+.bloging .blog p{
+   font-size: 16px;
+   /* margin: 10px; */
+}
+.blog .fa-calendar-alt,.blog .fa-user{
+    color: #EE6A3E;
+}
+.blog{
+    padding: 0px 0px 0px 20px;
+}
+.blog a{
+    font-size: 18px;
+    /* padding: 10px ; */
+    text-align:justify;
+    color: #000000;
+    font-weight: bold;
+}
+.blog a:hover{
+    color: #EE6A3E;
+}
+.contactus{
+    background-color: #0F0E0E;
+    color: #FFFFFF;
+}
+.contactus div p{
+    color: #9f9f9f;
+}
+.contactus ul{
+    margin: 10px 0px;
+}
+.contactus ul li{
+    list-style-type: none;
+}
+.contactus ul li a,.contactus div p a{
+    text-decoration: none;
+    color: #9f9f9f;
+    font-size: 20px;
+    line-height:35px;
+}
+.contactus ul li a:hover{
+    color: #F7B22C;
+}
+.contactus div p a:hover{
+    color: #EE6A3E;
+}
+.contactus div p span{
+    color: #FFFFFF;
+}
+.fus,.icon{
+    display: inline;
+}
+.icon i{
+    margin: 0px 0px 0px 5px;
+    font-size: 24px;
+    color: #9f9f9f;
+}
+.fa-phone-alt,.fa-map-marker-alt,.fa-envelope{
+    margin: 0px 10px;
+    color: #F7B22C;
+}
+.footer{
+    background-color: #1E1D1D;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 20px;
+    color: #FFFFFF;
+}
+.footer span{
+    color: #EE6A3E;
+}
+.fixed{
+   position:fixed;
+   bottom:20px;
+   right: 10px;
+   background-color: #EE6A3E;
+   width: 40px;
+   height:40px;
+}
+.fixed .fa-sort-up{
+    font-size:30px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+@media only screen and (min-width:768px){
+    .herosection,.technology,.apis,.payments,.secure,.kfeatures,.numbers,.dapp,.wprocess,.testimonial,.info,.countries,.blogs,.contactus{
+       padding:30px;
+    }
+    .herocontent h1{
+        font-size: 50px;
+    }
+    .herocontent .logos img{
+        width:18%;
+        margin: 20px;
+    }
+    .herocontent #gstarted,.herocontent #transfer,.secure div button{
+        padding:12px 30px;
+    }
+    .technologyinner div,.apisinner div,.paymentsinner div,.kfeaturesinner div,.numbers div,.wprocessinner div,.country div,.secureinner ul{
+        width: 45%;
+        margin:15px;
+    }
+    .apis .earthimg,.payments div .image,.secure div .image,.dapp div .image{
+        padding: 20px 30px;
+        margin: 0px;
+    }
+    .kfeaturesinner div,.wprocessinner div{
+        text-align: center;
+    }
+    #iconquote{
+        /* display: inline-block;
+        width: 20%; */
+        float: left;
+        margin: 0px 20px 0px 0px;
+    }
+    .testimonialcontent .tpara{
+        margin:10px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: 18px;
+        /* display: inline-block; */
+        /* width: 70%; */
+    }
+    .testimonialcontent .stars{
+        width: 30%;
+        margin: 0px auto;
+    }
+    .bloginner .bloging{
+        width: 45%;
+        margin: 30px 15px;
+    }
+    .contactus div{
+        width: 42%;
+        margin: 15px 25px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .header nav ul{
+        display:block;
+    }
+    .header .fa-bars{
+        display: none;
+    }
+    .header nav ul li{
+        display: inline-block;
+        padding: 5px;
+    }
+    .header nav ul li a{
+       color: #FFFFFF;
+       text-decoration: none;
+    }
+    .heroinner div{
+        width: 50%;
+    }
+    .herocontent h1{
+        font-size: 70px;
+    }
+    .herocontent #gstarted,.herocontent #transfer{
+        padding: 15px 40px;
+    }
+    
+    .herocontent .logos img{
+        width:18%;
+        margin: 15px;
+    }
+    .technologyinner div,.kfeaturesinner div,.numbers div,.wprocessinner div,.country div,.contactus div{
+        width: 23%;
+        margin:10px 0px 10px 18px;
+    }
+    .technologyinner div,.kfeaturesinner div,.wprocessinner div{
+        text-align: left;
+    }
+    .technologyinner div .iconimg{
+         margin: 10px 0px;
+    }
+    .technologyinner div h3{
+        font-size: 19px;
+    }
+    .apis div,.payments div,.secure div,.dapp div{
+        width: 50%;
+        padding:0px 10px;
+    }
+    .apis div .image,.payments div .image,.secure div .image {
+          margin-top:70px;
+    }
+    .apis .apisinner,.payments .paymentsinner,.secure .secureinner{
+        padding:0px;
+        margin: 0px;
+    }
+    .apisinner div,.paymentsinner div,.secureinner ul{
+        width: 47%;
+        margin:0px 5px;
+        padding: 0px;
+    }
+    .secureinner ul{
+        width: 43%;
+        margin:0px 30px 0px 0px;
+        text-align: justify;
+    }
+    .kfeatures .kcontent,.wprocess .wpara,.testimonial .tparas,.countries .cpara,.blogs .bpara,.technology .tpara{
+        margin:20px 120px ;
+    }
+    .numbers div{
+        text-align: left;
+    }
+    .numbers h3::before{
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 2%;
+        width: 3px;
+        height: 20%;
+        background-color: #EE6A3E;
+    }
+    /* .numbers div h3{
+        padding: 0px 0px 0px 40px;
+    } */
+    .testimonial .testimonialcontent{
+        margin: 50px;
+        text-align: left;
+    }
+    .testimonialcontent .tpara{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .testimonialcontent p,.testimonialcontent .stars{
+        margin: 10px 80px;
+    }
+    .wprocessinner div img{
+        width: 100%;
+    }
+    .testimonial .square{
+        margin: 10px;
+        float: right;
+    }
+    .countries .cpara1{
+        margin: 20px 140px;
+    }
+    .country{
+        margin:40px 0px;
+    }
+    .info p{
+        margin: 20px 100px;
+    }
+    .contactus .icon{
+       display: block;
+       width: 100%;
+       margin: 0px;
+    }
+    .contactus .icon img{
+        display: inline;
+    }
+}
+@media only screen and (min-width:1200px){
+    .header nav ul li{
+        padding: 11px;
+    }
+    .header nav ul li button{
+        padding: 15px 35px;
+    }
+    #login{
+        padding: 15px 25px;
+    }
+    .heroinner div .image{
+        padding:0px 30px;
+    }
+    .technology{
+        padding: 50px 50px;
+    }
+    .technologyinner div,.kfeaturesinner div,.numbers div,.wprocessinner div, .country div,.contactus div{
+        width: 23%;
+        margin:10px 0px 10px 20px;
+    }
+    .apis,.secure,.kfeatures,.numbers,.dapp,.wprocess,.testimonial,.countries,.blogs,.contactus{
+        padding: 50px 30px;
+        align-items: center;
+    }
+    .apis div .image,.payments div .image{
+        margin-top:0px;
+        padding:30px;
+    }
+    .secure div .image{
+        margin-top:0px;
+    }
+    .apisinner div,.paymentsinner div,.secureinner ul{
+        width: 46%;
+        margin: 0px 10px;
+    }
+    .apis .earthimg{
+        padding: 0px;
+        margin: 0px;
+    }
+    .kfeatures .kcontent,.wprocess .wpara,.testimonial .tparas,.countries .cpara,.blogs .bpara,.technology .tecpara{
+        margin:20px 220px ;
+    }
+    .testimonial .testimonialcontent {
+        margin: 50px 170px 50px 120px;
+    }
+    .payments{
+        padding: 30px;
+        align-items: center;
+    }
+    .secure{
+        align-items: flex-start;
+    }
+    .secure div{
+        padding:50px 10px;
+    }
+    .secure div button{
+        margin: 10px 0px;
+    }
+    .secure .secureimg{
+        padding: 0px 10px;
+    }
+    .info{
+        padding: 50px 100px;
+    }
+    .country{
+        margin: 60px 0px;
+    }
+    .countries .cpara1{
+        margin: 20px 300px;
+    }
+    .bloginner .bloging{
+        margin: 0px 0px 0px 20px;
+        width:23%;
+    }
+    .bloging .blog{
+        margin: 20px 0px;
+        bottom: -50px;
+        width: 90%;
+    }
+    .bloginner .blog p{
+        margin: 5px 0px;
+    }
+    .contactus{
+        align-items: flex-start;
+    }
+    .contactus .icon{
+        display:inline;
+        margin: 0px;
+     }
+     .contactus .icon img{
+         display: inline;
+     }
+}

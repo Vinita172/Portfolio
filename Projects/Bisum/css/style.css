@@ -1,0 +1,233 @@
+:root{
+    --bs-blue:#00234D;
+    --bs-pink:#F76B6A;
+    --bs-babypink:#FFE0E0;
+    --bs-skyblue:#ABE6FF;
+    --bs-font1:'Poppins', sans-serif;
+}
+.bg-blue{
+   background-color: var(--bs-blue);
+}
+.border-blue{
+    border: 1px solid var(--bs-blue);
+}
+.text-blue{
+    color: var(--bs-blue);
+}
+.text-pink{
+    color: var(--bs-pink);
+}
+.bg-skyblue{
+    background-color: var(--bs-skyblue);
+}
+.bg-babypink{
+    background-color: var(--bs-babypink);
+}
+.font1{
+    font-family: var(--bs-font1);
+}
+#header{
+    z-index: 50;
+    border-bottom: 1px solid var(--bs-blue);
+}
+#header .dropdown-item:hover{
+    background:transparent;
+}
+#header .nav-link:hover,#header .dropdown-item:hover,.hicons:hover{
+    color: var(--bs-pink) !important;
+}
+.sliderimg{
+    height: 250px;
+}
+.buy1{
+    background: url(../images/buy1.jpg);
+    background-position: top right;
+    background-size: cover;
+}
+.buy1:hover{
+    background:linear-gradient(rgba(0, 35, 77,0.1),rgba(0,35,77,0.1)), url(../images/buy1.jpg);
+    background-position: top right;
+    background-size: cover;
+}
+.buy2{
+    background: url(../images/buy2.jpg);
+    background-position: top left;
+    background-size: cover;
+}
+.buy2:hover{
+    background:linear-gradient(rgba(0, 35, 77,0.1),rgba(0,35,77,0.1)), url(../images/buy2.jpg);
+    background-position: top left;
+    background-size: cover;
+}
+.buy3{
+    background: url(../images/buy3.jpg);
+    background-position: top right;
+    background-size: cover;
+}
+.buy3:hover{
+    background:linear-gradient(rgba(0, 35, 77,0.1),rgba(0,35,77,0.1)), url(../images/buy3.jpg);
+    background-position: top right;
+    background-size: cover;
+}
+.btn-change3{
+    box-shadow: 0 0 1px #ccc;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0px 0px 0 0 #F76B6A inset , 0px 0px 0 #F76B6A inset;
+}
+.btn-change3:hover{
+    box-shadow: 0px 0px 0 0px #F76B6A inset , 0px -50px 0 0px #F76B6A inset; 
+}
+.icon1{
+    transition: 1s;
+}
+.iconrow:hover .icon1{
+    animation: updown 1s infinite alternate;
+}
+.iconrow:hover .txt,.txt1:hover{
+    color: var(--bs-pink);
+}
+@keyframes updown{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+.icons{
+    top:90%;
+    z-index: 1;
+    transition: 1s;
+}
+#fproducts .card-body{
+    z-index: 5;
+}
+.colorspan{
+    width: 20px;
+    height: 20px;
+}
+.img2{
+   position: absolute;
+   transition: 0.8s ease-in-out;
+   opacity: 0;
+}
+.card1:hover .icons{
+    top:58%;
+
+}
+.card1:hover .img2{
+   opacity: 1;
+}
+#video{
+    background:linear-gradient(rgba(0, 35, 77, 0.5),rgba(0, 35, 77, 0.5)), url(../images/video-furniture.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+}
+#owl-carousel-1 .owl-dots .owl-dot.active span,#owl-carousel-2 .owl-dots .owl-dot.active span{
+    background-color: var(--bs-blue);
+}
+#discover{
+    background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/single-banner-2.jpg) center center;
+    background-size: cover;
+    height: 300px;
+}
+.blogp{
+    position: absolute;
+    top: -13px;
+    right: 20px;
+}
+.blogcard:hover .blogimg{
+  filter: brightness(40%);
+}
+.blogcard:hover .blogtitle{
+    color: var(--bs-pink);
+}
+.blogcard:hover .icon2{
+    color: var(--bs-pink);
+}
+.btn1:hover{
+    background-color: var(--bs-blue);
+}
+#footer input:focus{
+    box-shadow: 0px 0px 0px #00234D;
+    border: 1px solid var(--bs-blue);
+}
+.footerlink:hover{
+    color:#00234D !important;
+    font-weight: bold;
+}
+@media only screen and (min-width:768px){
+    .sliderimg{
+        height: 90vh;
+    }
+    .slidecaption{
+        position: absolute;
+        top:23%;
+    }
+    .shopcard1{
+        position: absolute;
+        right: 0px;
+    }
+    .shopcard2{
+        position: absolute;
+       margin-top: 315px;
+    }
+    .shopcard3{
+        position: absolute;
+        right: 0px;
+        margin-top:630px
+    }
+    #video{
+        margin-top: 77em;
+        height: 500px;
+    }
+    #discover{
+        height: 500px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .slidecaption{
+        position: absolute;
+        top:20%;
+        left: 39%;
+    }
+    .shopbody1,.shopbody2{
+        position: absolute;
+        top:10%;
+        left: -66%;
+    }
+    .shopbody2{
+        left: -49%;
+    }
+    .shopcard2 h5{
+        white-space: nowrap;
+    }
+    #video{
+        margin-top: 72em;
+    }
+}
+@media only screen and (min-width:1200px){
+    .slidecaption{
+        position: absolute;
+        top:28%;
+        left: 47%;
+    }
+    .shopcard2{
+        margin-top: 390px;
+    }
+    .shopcard3{
+        margin-top: 772px;
+    }
+    .shopbody1{
+        top:30%;
+        left: -56%
+    }
+    #video{
+        margin-top: 87em;
+    }
+}
