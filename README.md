@@ -6,7 +6,6 @@ Welcome to the README for my portfolio website! This document provides an overvi
 
 This portfolio website serves as a showcase of my work, skills. It is designed to provide visitors with a glimpse of my professional background, projects, and contact information.
 
-![Overview](images/Overview.PNG)
 
 
  ## Technologies Used
