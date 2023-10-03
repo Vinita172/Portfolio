@@ -26,5 +26,15 @@ The website is organized into several key sections:
 5. **Projects**: Here, you can explore some of my featured projects. Each project is showcased with a brief description and relevant links.
 6. **Contact**: This section includes ways to reach out to me, such as my email address, LinkedIn profile, and other relevant contact information.
 
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository
+
+2. Open the project in your preferred code editor.
+
+3. Launch the `index.html` file in a web browser to view the Portfolio.
+
 
 
